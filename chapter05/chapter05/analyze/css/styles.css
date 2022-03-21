@@ -1,15 +1,28 @@
 /*
     Student Name
-	File Name: 
-	Current Date: 
+	File Name:
+	Current Date:
 */
 
 /* CSS reset */
-body, header, nav, main, footer, img, h1, h3, ul {
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+ul {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
+/* hidding */
+/* <h1 class="intro">tablet-desktop</h1>h1 {
+    display: none;
+} */
 
 /* Style rule for body and images */
 body {
@@ -19,6 +32,12 @@ body {
 img {
     max-width: 100%;
     display: block;
+}
+
+/* Mobile viewport */
+/* style rule that hides the tablet-desktop class */
+.tablet-desktop {
+    display: none;
 }
 
 /* Style rules for header content */
@@ -38,9 +57,11 @@ nav {
 
 nav ul {
     text-align: center;
+    list-style-type: none;
 }
 
 nav li {
+    display: inline-block;
     font-size: 1em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
@@ -62,6 +83,47 @@ main {
 
 main p {
     font-size: 1.25em;
+}
+
+.btn {
+    background-color: #375f1b;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn a {
+    color: #ebf7e3;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+}
+
+.corner {
+    border-radius: 12px;
+}
+
+button {
+    background-color: #375f1b;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a.btn-warning {
+    text-decoration: no-underline;
+    font-size: 1.25em;
+}
+
+h3 {
+    border-radius: 12px;
 }
 
 /* Style rules for footer content */
